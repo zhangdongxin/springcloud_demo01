@@ -1,0 +1,12 @@
+server:
+  port: 9000
+spring:
+  application:
+    name: ConsumerUserRibbon
+eureka:
+  instance:
+    prefer-ip-address: true
+    instance-id: consumer9000 #修改显示名称
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
